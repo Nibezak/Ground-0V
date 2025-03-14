@@ -19,6 +19,7 @@ Leap is an open-source tool to generate animations for any topic or question. Cu
 - [Contributing](#contributing)
 - [Roadmap & Future Plans](#roadmap--future-plans)
 - [Known Limitations & Areas for Improvement](#known-limitations--areas-for-improvement)
+- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ##  Features
