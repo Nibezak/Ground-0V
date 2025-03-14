@@ -1,7 +1,6 @@
 # Leap
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://askleap.ai)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 Leap is an open-source tool to generate animations for any topic or question. Currently it uses the Manim animation engine along with synchronized narration, but future plans include integrating it with other libraries as well. A simple alpha is deployed, where you can simply ask your question, and Leap will create a custom, visually engaging animated explanation with synchronized narration tailored to your preferred knowledge level.
@@ -9,7 +8,7 @@ Leap is an open-source tool to generate animations for any topic or question. Cu
 **[✨ Try the public alpha at askleap.ai ✨](https://askleap.ai)**
 
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [Architecture & System Design](#architecture--system-design)
@@ -23,7 +22,7 @@ Leap is an open-source tool to generate animations for any topic or question. Cu
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
-## 🚀 Features
+##  Features
 
 - **Custom Animated Explanations**: Generate educational animations from text prompts on any topic
 - **Multiple Explanation Levels**: Choose between ELI5 (simple), Normal, or Advanced explanations
@@ -35,7 +34,7 @@ Leap is an open-source tool to generate animations for any topic or question. Cu
 - **Persistent Storage**: Animations are stored for future reference and sharing
 - **Retro-Inspired UI**: Engaging and intuitive user interface with a unique aesthetic
 
-## 🏗️ Architecture & System Design
+##  Architecture & System Design
 
 ### System Architecture Diagram
 
@@ -144,7 +143,7 @@ Leap uses FastAPI's background tasks for handling the animation generation proce
 
 This architecture works well for moderate loads but may require additional infrastructure like dedicated worker services (e.g., Celery) for production environments with high traffic.
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -431,7 +430,7 @@ When running without Docker, be aware that:
 3. Consider increasing your system's swap space if you have limited RAM
 4. For production deployment, Docker is still the recommended approach
 
-## 🛠 Project Structure
+##  Project Structure
 
 ```
 leap/
@@ -468,9 +467,9 @@ leap/
 └── README.md                # Project documentation
 ```
 
-## 🧪 Testing
+##  Testing
 
-Leap includes a comprehensive test suite to ensure reliability and correctness of the codebase. The test suite is designed to be fast and efficient, focusing on the most critical components.
+Leap includes a test suite to ensure reliability and correctness of the codebase. Currently. the test suite is designed to be fast and efficient, focusing on the most critical components.
 
 ### Test Coverage
 
@@ -515,7 +514,7 @@ Future test improvements should focus on:
 
 For detailed information about the test suite, including how to write new tests and troubleshoot common issues, see the [tests/README.md](backend/tests/README.md) file.
 
-## 🧩 Core Components
+##  Core Components
 
 ### Backend Components
 
@@ -599,7 +598,7 @@ Shows the current status of animation jobs, including:
 - Processing status
 - Completion estimates
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Animation Endpoints
 
@@ -666,7 +665,7 @@ Request body:
 }
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions from the community! Here's how you can help improve Leap:
 
@@ -726,11 +725,9 @@ In the spirit of open-source transparency, here are some current limitations and
 5. **Testing Coverage**: More comprehensive testing is needed
    - *Future improvement*: Expand unit and integration test coverage
 
-## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [Manim](https://github.com/ManimCommunity/manim): The Mathematical Animation Engine that powers our animations
 - [FastAPI](https://fastapi.tiangolo.com/): The high-performance web framework used for our backend
@@ -743,7 +740,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  <a href="https://leap.ai">Try Leap</a> •
+  <a href="https://askleap.ai">Try Leap</a> •
   <a href="https://github.com/sid-thephysicskid/leap/issues">Report Bug</a> •
   <a href="https://github.com/sid-thephysicskid/leap/issues">Request Feature</a>
 </p> 
