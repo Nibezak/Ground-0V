@@ -97,13 +97,17 @@ graph TD
     H --> I[end]
 ```
 
-This workflow uses LangGraph for orchestration, allowing for:
-- Initial validation of user input
-- Planning of animation scenes based on the topic
-- Generating Manim code for the animation
-- Validating and executing the generated code
-- Automatic error correction loops when execution fails
-- Proper logging and completion handling
+
+1. **Input Validation**: Ensures the prompt and parameters are valid
+   - Provides helpful reformulations for vague queries
+   - Offers specific suggestions to improve unclear inputs 
+   - Uses the reformulated question internally for better results
+   - Creates a more user-friendly experience through constructive feedback
+2. **Scene Planning**: Breaks down the explanation into logical scenes
+3. **Code Generation**: Generates Manim code for the animation
+4. **Code Validation**: Validates generated code for correctness
+5. **Animation Execution**: Renders the animation using Manim
+6. **Error Handling**: Attempts to correct errors in a feedback loop
 
 ### Data Flow
 
@@ -554,22 +558,7 @@ The FastAPI server handles HTTP requests, manages animation jobs, and serves the
 - **GET /api/animations/video/{job_id}**: Stream a generated animation
 - **POST /api/feedback**: Submit user feedback for an animation
 
-#### Workflow System (`leap/workflow/`)
 
-The animation generation process uses LangGraph to orchestrate a multi-step workflow:
-
-![Leap Workflow Diagram](workflow_graph.png)
-
-1. **Input Validation**: Ensures the prompt and parameters are valid
-   - Provides helpful reformulations for vague queries
-   - Offers specific suggestions to improve unclear inputs 
-   - Uses the reformulated question internally for better results
-   - Creates a more user-friendly experience through constructive feedback
-2. **Scene Planning**: Breaks down the explanation into logical scenes
-3. **Code Generation**: Generates Manim code for the animation
-4. **Code Validation**: Validates generated code for correctness
-5. **Animation Execution**: Renders the animation using Manim
-6. **Error Handling**: Attempts to correct errors in a feedback loop
 
 #### Intelligent Input Processing System
 
