@@ -1,0 +1,14 @@
+
+services:
+  leap:
+    # Override to use just 1 replica locally
+    deploy:
+      replicas: 1
+    # For local testing, expose the port directly without Nginx
+    ports:
+      - "8000:8000"
+
+  # Disable the Nginx service for local testing
+  nginx:
+    profiles:
+      - "production-only" # This makes the service not start by default
