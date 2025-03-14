@@ -77,6 +77,34 @@ Leap is an open-source tool to generate animations for any topic or question. Cu
 └─────────────┘
 ```
 
+### Animation Workflow Graph
+
+The following diagram illustrates the orchestration flow of the animation generation process in Leap:
+
+```mermaid
+graph TD
+    A[__start__] --> B[validate_input]
+    B -.-> C[plan_scenes]
+    C --> D[generate_code]
+    D --> E[validate_code]
+    E -.-> F[execute_code]
+    F -.-> G[correct_code]
+    G -.-> F
+    E -.-> G
+    G -.-> E
+    G --> H[log_end]
+    F --> H
+    H --> I[end]
+```
+
+This workflow uses LangGraph for orchestration, allowing for:
+- Initial validation of user input
+- Planning of animation scenes based on the topic
+- Generating Manim code for the animation
+- Validating and executing the generated code
+- Automatic error correction loops when execution fails
+- Proper logging and completion handling
+
 ### Data Flow
 
 1. **User Input**: User submits a question/topic with desired explanation level through the React frontend
