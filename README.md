@@ -1,3 +1,12 @@
+# Update : I've decided to release a series of videos where I build out this project step by step in notebooks, explaining my thought process. 
+I'll update the notebooks in the instructional_notebooks/ folder and post the corresponding links to the videos that walkthrough them:
+
+1) Build a basic working prototype from scratch
+
+- Notebook: https://colab.research.google.com/drive/1bmeGTQ7p9qKRwCaCzckWkC4jbwhAouhp?usp=sharing
+
+- Video : https://youtu.be/tmlErq34-OM?si=gfrZ6GL9LlsDMD56
+
 # Leap
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://askleap.ai)

@@ -3,6 +3,7 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 from manim import *  # Import Manim's color constants
+from pydantic import BaseModel
 
 # Load environment variables from .env file
 # This will look for .env in the current working directory and parent directories
