@@ -7,6 +7,12 @@ I'll update the notebooks in the instructional_notebooks/ folder and post the co
 
 - Video : https://youtu.be/tmlErq34-OM?si=gfrZ6GL9LlsDMD56
 
+2) Orchestrate the workflow in Langgraph
+
+- Notebook: https://colab.research.google.com/drive/1ubPLnabhPduTPplYkXIFJxH20e4rKpcI?usp=sharing
+
+- Video: https://youtu.be/gjxDoGyfXV8?si=CCtgLPPQee_RDdU2
+
 # Leap
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://askleap.ai)
