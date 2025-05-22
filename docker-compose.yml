@@ -29,7 +29,7 @@ services:
       - SUPABASE_STORAGE_BUCKET=videos
 
       # Application Configuration
-      - BASE_URL=${BASE_URL:-http://askleap.ai}
+      - BASE_URL=${BASE_URL:-https://ground-0v.onrender.com}
       - PORT=${PORT:-8000}
       - PYTHONPATH=/app
     volumes:
