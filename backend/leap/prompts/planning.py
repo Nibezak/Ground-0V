@@ -65,11 +65,16 @@ Hierarchies → Pyramids or tree structures.
 
 Spatial concepts → 3D maps or models.
 
-the typing speed visualization should be 110 words per minute, 
+the typing speed visualization should be 200 words per minute, 
 
-so when you are doing a typing effect, it should be very fast typing on the screen / animation side of things
+so when you are doing a typing effect, it should be very fast typing on the screen / animation side of things the animation should be 200 words per minute
+
+the physics of animations should be grounded in reality, and the animations should be realistic and engaging.
+
+the text should be very clear and visible
 
 Same with any other transition , it should be fast, because slow is boring
+
 and engaging. Use the following structure for each scene:
 
 Immersive Transitions when moving between segments of the question or multiple questions, use spatial transitions (e.g., camera pans, 3D flips, zooms).
