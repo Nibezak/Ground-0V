@@ -108,7 +108,7 @@ class AnimationService:
             state = GraphState(
                 user_input=prompt,
                 rendering_quality="low",
-                duration_detail="brief",
+                duration_detail="detailed",
                 user_level=level,
                 voice_model="nova"
             )

@@ -89,7 +89,7 @@ def generate_code(
             user_level_instruction = "The explanation should be suitable for a high school/early college student. You can use appropriate terminology but still make it accessible."
         
         # Add duration instruction
-        duration_instruction = "The animation should be 1-2 minutes long, so keep it concise and focused."
+        duration_instruction = "The video should be at least 4 minutes long. Elaborate on the concepts and provide detailed explanations and examples."
         
         # Get example code for one-shot learning
         example_code = read_gcf_example()

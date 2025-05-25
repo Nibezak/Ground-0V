@@ -42,7 +42,7 @@ def plan_scenes(state: GraphState, llm_service: Optional[LLMService] = None) -> 
             user_level_instruction = "Explain this concept at a high school/early college level. You can use appropriate terminology but still make it accessible."
         
         # Fixed duration instruction for initial release
-        duration_instruction = "The video should be 1-2 minutes long, so focus on the most important aspects of the concept."
+        duration_instruction = "The video should be at least 4 minutes long. Elaborate on the concepts and provide detailed explanations and examples."
         
         logger.info(f"Generating scene plan with user level: {user_level}")
         
@@ -89,7 +89,7 @@ def plan_scenes(state: GraphState, llm_service: Optional[LLMService] = None) -> 
             error=None,
             correction_attempts=0,
             rendering_quality=state.get("rendering_quality", "low"),
-            duration_detail="short",  # Fixed to short for initial release
+            duration_detail="detailed",  # Changed from short
             user_level=state.get("user_level", "normal"),
             voice_model=state.get("voice_model", "nova"),
             email=state.get("email"),
@@ -106,7 +106,7 @@ def plan_scenes(state: GraphState, llm_service: Optional[LLMService] = None) -> 
             error=f"Scene planning failed: {str(e)}",
             correction_attempts=0,
             rendering_quality=state.get("rendering_quality", "low"),
-            duration_detail="short",  # Fixed to short for initial release
+            duration_detail="detailed",  # Changed from short
             user_level=state.get("user_level", "normal"),
             voice_model=state.get("voice_model", "nova"),
             email=state.get("email")

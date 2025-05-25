@@ -110,7 +110,7 @@ def error_correction(
             error=None,
             correction_attempts=state.get("correction_attempts", 0) + 1,
             rendering_quality=state.get("rendering_quality", "low"),
-            duration_detail="short",  # Fixed to short for initial release
+            duration_detail="detailed",  # Changed from short
             user_level=state.get("user_level", "normal"),
             voice_model=state.get("voice_model", "nova"),
             email=state.get("email")
@@ -141,7 +141,7 @@ def error_correction(
             error=error_msg,
             correction_attempts=new_correction_attempts,
             rendering_quality=state.get("rendering_quality", "low"),
-            duration_detail="short",  # Fixed to short for initial release
+            duration_detail="detailed",  # Changed from short
             user_level=state.get("user_level", "normal"),
             voice_model=state.get("voice_model", "nova"),
             email=state.get("email")
