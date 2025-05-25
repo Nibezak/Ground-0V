@@ -31,6 +31,49 @@ SCENE_PLANNING_V2 = PromptTemplate(
     Plan a manim animation video to explain the concept. 
 Break it down into **8-10 detailed scenes** that comprehensively cover the topic, following this structure:
 
+Create a dynamic, engaging question display system with the following features:
+
+Typing Effects  The text of the question should appear as if it's being typed live, with configurable speed and sound options.
+
+Pop-Up Animations  Parts of the question or keywords should pop up dynamically to draw user attention, possibly using spring or bounce effects.
+
+Multiple Display Styles  Don't limit the display to one animation or layout. Vary the presentation using:
+
+Fade-ins
+
+Sliding transitions
+
+Zoom effects
+
+Highlighted callouts
+
+3D Visual Integration  Any concepts or structures referenced in the question (e.g. "spheres", "graphs", "pyramids", "houses", etc.) should be visually rendered in interactive 3D.
+
+For example:
+
+A “pyramid” should appear as a 3D model with depth and perspective.
+
+A “graph” should rise up in 3D, with animated nodes and edges.
+
+A “house” could appear as a rotatable 3D object, perhaps with clickable rooms.
+
+Adaptive Layout The display should adapt to the structure of the question:
+
+Logical relationships → Graphs or flowcharts.
+
+Hierarchies → Pyramids or tree structures.
+
+Spatial concepts → 3D maps or models.
+
+the typing speed visualization should be 110 words per minute, 
+
+so when you are doing a typing effect, it should be very fast typing on the screen / animation side of things
+
+Same with any other transition , it should be fast, because slow is boring
+and engaging. Use the following structure for each scene:
+
+Immersive Transitions when moving between segments of the question or multiple questions, use spatial transitions (e.g., camera pans, 3D flips, zooms).
+
 1. INTRODUCTION (30-45 seconds):
    - Introduce the concept with a clear title
    - Use a visual metaphor or real-world example to establish context

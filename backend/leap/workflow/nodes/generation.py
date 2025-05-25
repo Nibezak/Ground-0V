@@ -101,7 +101,7 @@ def generate_code(
 from manim import *
 from leap.templates.base_scene import ManimVoiceoverBase
 
-class SCENE_NAME(ManimVoiceoverBase):
+class SCENE_NAME(ManimVoiceoverBase): # Or use ThreeDScene if 3D visuals are appropriate for the topic
     # IMPORTANT: NEVER create backgrounds - the base class already provides one
     # DO NOT use Rectangle or any shape that covers the entire screen as a background
     # IMPORTANT: Always use color constants (e.g., BLUE) from manim, never use strings (e.g., "blue").

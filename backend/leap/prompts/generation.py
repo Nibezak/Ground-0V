@@ -231,6 +231,16 @@ DO NOT use any other color names or RGB values unless explicitly converting from
         3. After completing each logical section, call self.fade_out_scene() to clean up.
         4. Use smooth transitions between scenes for better flow.
         5. Ensure text is readable and appropriately sized.
+        6. **Dynamic Text Display**:
+           - Vary text appearance: Don't just use static `Text()` or `MathTex()`. Employ animations like `Write()` (for titles/headings), `AddTextLetterByLetter()` (for engaging explanations or to emphasize key terms), `FadeIn()`, `GrowFromCenter()`, `ScaleInPlace()`, and corresponding `FadeOut()` or `Uncreate()` effects. Use `Transform()` to morph text or change its style. The goal is to make text elements dynamic and visually interesting.
+        7. **3D Visualizations for Spatial Concepts**:
+           - When the topic involves inherently 3D objects or spatial concepts (e.g., spheres, planets, molecules, vector fields, gravitational fields, 3D coordinate systems):
+             * Transition to a `ThreeDScene` for that segment of the animation. (e.g., `class YourScene(ThreeDScene):` or have specific methods render in 3D and be called appropriately).
+             * Utilize Manim's 3D mobjects: `Sphere()`, `Cube()`, `Torus()`, `Dot3D()`, `Arrow3D()`, `Line3D()`, `ParametricSurface()`, `ThreeDAxes()`.
+             * Employ 3D camera manipulations: Use `self.set_camera_orientation(phi, theta, distance, gamma)` and `self.move_camera(...)` to provide different perspectives, zoom, and create a sense of depth. For example, to show a planet, use `Sphere()` potentially with surface texturing if simple, and orbit the camera around it.
+             * Represent forces or fields in 3D: Use `Arrow3D()` for vectors or visualize a gravitational well as a `ParametricSurface()`.
+             * Always ensure 3D scenes are well-lit. Consider using `self.camera.light_source.move_to([x,y,z])` or adding ambient light.
+             * Clearly indicate in your plan which scenes or parts of scenes should be rendered in 3D.
         
         CRITICAL RESTRICTIONS:
         - NEVER create any background rectangles, images, or shapes that cover the entire screen
