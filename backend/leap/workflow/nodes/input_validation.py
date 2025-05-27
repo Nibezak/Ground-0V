@@ -70,7 +70,8 @@ def validate_input(state: GraphState, llm_service: Optional[LLMService] = None, 
     
     Classify the input as one of:
     - VALID: Clear, specific question or topic that can be animated
-    - NEEDS_CLARIFICATION: Potentially valid but vague or ambiguous
+    - NEEDS_CLARIFICATION: Only when the input is gibberish or not a question/topic for example " what is civilazation" is fine but just "what is " is not
+    another example is what is life is fine but can you tell me needs clarification because it is not a question
     - INVALID: Too short, offensive, impossible to animate, or not a question/topic
     
     For EVERY input, regardless of classification:

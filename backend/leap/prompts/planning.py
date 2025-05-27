@@ -29,11 +29,11 @@ SCENE_PLANNING_V2 = PromptTemplate(
     The primary goal is to create a comprehensive and educational video of **at least 4 minutes (aim for 6-8+ minutes with this detailed structure)**. Be expansive in your explanations and provide rich, detailed content for every scene to meet this length requirement.
     **Crucially, to achieve the target video duration, the narration script planned for each scene and sub-component must be substantial and detailed. Avoid overly concise phrasing; aim for comprehensive explanations that naturally fill the allocated times.**
     Plan a manim animation video to explain the concept. 
-Break it down into **8-10 detailed scenes** that comprehensively cover the topic, following this structure:
+Break it down into **10-20 detailed scenes** that comprehensively cover the topic, following this structure:
 
 Create a dynamic, engaging question display system with the following features:
 
-Typing Effects  The text of the question should appear as if it's being typed live, with configurable speed and sound options.
+Every scene should have a various of animations and transitions to keep the user engaged, the more animation per scene the better
 
 Pop-Up Animations  Parts of the question or keywords should pop up dynamically to draw user attention, possibly using spring or bounce effects.
 
@@ -65,11 +65,7 @@ Hierarchies → Pyramids or tree structures.
 
 Spatial concepts → 3D maps or models.
 
-the typing speed visualization should be 200 words per minute, 
-
-so when you are doing a typing effect, it should be very fast typing on the screen / animation side of things the animation should be 200 words per minute
-
-the physics of animations should be grounded in reality, and the animations should be realistic and engaging.
+if you circle a text make sure the circle is big enough for the text to fit in it
 
 the text should be very clear and visible
 
