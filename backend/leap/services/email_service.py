@@ -40,6 +40,7 @@ class EmailService:
             <p><a href="{video_url}">Click here to view your animation</a></p>
             <p>Job ID: {job_id}</p>
             <p>Thank you for using Ground-0 by packman!</p>
+            <a href="https://payflow.dev">Go to Ground-0 by packman</a>
         """
 
         # Constructing the JSON payload string manually to ensure proper escaping for the -d argument
